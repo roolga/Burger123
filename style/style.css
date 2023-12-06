@@ -24,6 +24,7 @@ button{
 }
 .header-top{
     padding-top: 26px;
+    padding-bottom: 26px;
 }
 .header-menu{
     display: flex;
@@ -66,6 +67,7 @@ font-weight: 700;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 142px 0;
+    background-position: center;
 }
 .header-info{
     display: flex;
@@ -264,4 +266,85 @@ footer{
     font-weight: 800;
     line-height: 190%; 
     text-transform: uppercase;
+}
+.nav>.phone{
+    display: none;
+}
+.burger-menu{
+    display: none;
+}
+
+@media (max-width:768px){
+    .container{
+        padding: 0 15px;
+    }
+    .menu>li{
+        margin-right: 22px;
+    }
+    .header-bottom{
+        background-position: center; 
+    }
+    .banner{
+        margin-top: 72px;
+        margin-bottom: 80px;
+        padding-left: 40px;
+        background-position-x: -70px;
+    }
+    .item-img{
+        width: 360px;
+    }
+    .add>.container>.burgers{
+        flex-wrap: nowrap;
+    }
+    .w768>.item{
+        margin-right: 12px;
+    }
+    .w768>.item:last-child{
+        margin-right: 0;
+    }
+    .w768>.item>.item-img{
+        width: 274px;
+        height: 320px;
+    }
+    footer{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .footer>.phone{
+        display: none;
+    }
+    .nav>.phone{
+        display: flex;
+}
+@media (max-width:320px){
+    .burger-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .header-menu>a>img{
+        width: 116px;
+        height: 37px;
+    }
+    .header-menu>.burger-menu>img{
+        width: 34px;
+        height: 22px;
+    }
+    .header-top{
+        padding: 20px 0;
+    }
+    .header-bottom{
+        padding: 55px 0;
+        background:url('../img/h320.png');
+    }
+    .crumbs{
+        font-size: 14px;
+    }
+    .header-title{
+        font-size: 38px;
+    }
+    .header-text[
+        font-size: 12px;
+    ]
 }
